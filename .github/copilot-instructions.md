@@ -1,42 +1,63 @@
-<!-- Copilot / AI agent instructions for quick onboarding -->
-# Copilot instructions — movie-rental refactoring exercises
+# Copilot Instructions - Refactoring Project
 
-This repository contains two small, self-contained refactoring exercises in Java:
-- `gildedrose` (legacy imperative logic in `updateQuality()`)
-- `movierental` (classic Movie/Rental example; `Customer.statement()` formats results)
+This repository contains refactoring exercises in Java. This file provides quick navigation to all AI agent guidance documents.
 
-Follow these targeted rules when generating or changing code:
+## Documentation Structure
 
-**Build & test**
-- Project uses Maven and Java 11. Build and run tests with: `mvn test`.
-- Test reports appear under `target/surefire-reports`.
-- The `pom.xml` sets `source`/`target` to 11. See [pom.xml](pom.xml#L1-L40).
+### **Start Here: Project Context**
+→ [**Tech Onboarding**](context/tech-onboarding.md)  
+**Purpose**: Complete project overview, build instructions, and refactoring exercise specifics  
+**When to use**: First time working in this codebase; understanding the project architecture, test requirements, and legacy code constraints
 
-**Big picture & intent**
-- Two separate exercises live under `src/main/java`: [gildedrose](src/main/java/gildedrose) and [movierental](src/main/java/movierental). Changes should keep the exercises independent.
-- The objective is to refactor for clarity while preserving existing behavior and test outputs — this repo is a refactoring workshop, not a feature app.
+### **Coding Standards & Guidelines**
 
-**Key files to reference**
-- Movierental example: [src/main/java/movierental/Customer.java](src/main/java/movierental/Customer.java#L1-L200) (note: `statement()` returns a formatted string used by tests).
-- Movierental domain types: [src/main/java/movierental/Movie.java](src/main/java/movierental/Movie.java#L1-L120) and [src/main/java/movierental/Rental.java](src/main/java/movierental/Rental.java#L1-L120).
-- Gilded Rose example: [src/main/java/gildedrose/GildedRose.java](src/main/java/gildedrose/GildedRose.java#L1-L200) and [src/main/java/gildedrose/Item.java](src/main/java/gildedrose/Item.java#L1-L120).
+#### [**Core Standards**](code-guidelines/core-standards.md)
+**Purpose**: Universal coding principles applicable to all languages and projects  
+**What it covers**:
+- General principles (KISS, YAGNI, DRY, Boy Scout Rule)
+- SOLID design principles
+- Code smell detection and elimination
+- Method/class size guidelines
+- Naming conventions and readability requirements
 
-**Project-specific patterns & constraints**
-- Tests (and exercises) expect exact string outputs and legacy behaviors. Preserve literal formatting in `Customer.statement()` (e.g. the header "Rental Record for <name>", tab spacing and footer lines) unless you update tests accordingly.
-- The `gildedrose` codebase relies on string equality checks against `Item.name` (e.g. "Aged Brie", "Backstage passes..."). If refactoring these checks, provide an adapter that preserves current behavior.
-- `movierental.Movie` uses integer price-code constants (`REGULAR`, `NEW_RELEASE`, `CHILDRENS`). If you replace with enums, update all call sites and tests in the same commit.
+**When to consider**: 
+- Before writing any new code or refactoring
+- When reviewing code quality
+- Resolving design decisions (should I extract this method? is this class doing too much?)
 
-**Coding style & workflow expectations**
-- Follow repository coding standards: see [coding-standards.md](coding-standards.md#L1-L8) for naming, method size, and refactoring guidance.
-- Prefer small, well-named methods when extracting behavior from large switch/case blocks (examples: `Customer.statement()` and `GildedRose.updateQuality()`).
-- Always run `mvn test` after edits and include tests or updated assertions with refactor commits.
+#### [**Java Spring Boot Standards**](code-guidelines/java-springboot.md)
+**Purpose**: Java-specific and Spring Boot best practices  
+**What it covers**:
+- Java 17+ conventions
+- Package-by-feature organization
+- Spring Boot layer patterns (Controller → Service → Repository)
+- Exception handling strategies
+- Testing patterns (unit, integration, mocking)
+- Database and API conventions
 
-**Testing guidance**
-- Tests use JUnit (pom declares junit:4.12). Run all tests with `mvn test`. To run a single test class: `mvn -Dtest=movierental.CustomerTest test`.
-- If you modify public method signatures, update the tests in the same change to keep the commit self-consistent.
+**When to consider**:
+- Building Spring Boot applications (Note: current exercises use plain Java)
+- Structuring multi-layer applications
+- Writing REST controllers or service layers
+- Future reference if exercises evolve to Spring Boot
 
-**What to avoid**
-- Do not change string outputs or numeric behaviors in separate commits without updating tests; the exercises rely on preserved behavior.
-- Avoid global renames that mix both exercises in one PR — keep `gildedrose` and `movierental` changes scoped.
 
-If anything here is unclear or you'd like more examples (e.g., suggested refactor steps for `Customer.statement()` or `GildedRose.updateQuality()`), tell me which file to expand with inline guidance.
+## Recommended Workflow
+
+1. **First visit**: Read [tech-onboarding.md](context/tech-onboarding.md) for project context
+2. **Before coding**: Reference [core-standards.md](code-guidelines/core-standards.md) for refactoring principles
+3. **While refactoring**: Apply small, incremental changes following SOLID and code smell guidelines
+4. **Always**: Run `mvn test` to verify behavior preservation
+
+## Project-Specific Reminders
+
+- This is a **refactoring workshop**, not feature development
+- Preserve exact test outputs (string formatting matters!)
+- Two independent exercises: `gildedrose` and `movierental`
+- Java 11, Maven, JUnit 4.12
+- Incremental changes > big rewrites
+
+## Additional Resources
+
+- Martin Fowler's "Refactoring: Improving the Design of Existing Code" (methodology basis)
+- See [README.md](../README.md) for project overview and build instructions
