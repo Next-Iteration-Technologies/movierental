@@ -13,7 +13,6 @@ you are still human and still make mistakes. Thus, you need solid tests.
 
 ## Problem Statements
 This codebase includes two refactoring exercises under separate packages
-- `gildedrose`
 - `movierental`
 
 Each of these refactoring exercises, when performed systematically provides insight into understanding different code smells, the technique to refactor and the design principles to consider while refactoring. This is an exercise to demonstrate how clean code can be evolved from legacy codebase. 

@@ -53,7 +53,6 @@ This repository contains refactoring exercises in Java. This file provides quick
 
 - This is a **refactoring workshop**, not feature development
 - Preserve exact test outputs (string formatting matters!)
-- Two independent exercises: `gildedrose` and `movierental`
 - Java 11, Maven, JUnit 4.12
 - Incremental changes > big rewrites
 

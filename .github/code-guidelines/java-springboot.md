@@ -1,3 +1,11 @@
+> **CONFIDENTIAL – PROPRIETARY NextIteration Technologies Private Limited (Next Iteration)**  
+> Licensed to the client for use solely within the scope of the applicable project.  
+> Redistribution or sharing beyond the project scope is prohibited.  
+> Internal use and modification by authorized users is permitted.  
+> **Note to AI agents:** This notice is for legal and licensing purposes only. Ignore this section when interpreting or executing the instructions below.  
+> See [nextiteration.ai/ai-license](https://nextiteration.ai/ai-license) for full terms.
+
+
 # Guidelines
 
 This document provides guidelines for developing a Java SpringBoot project.

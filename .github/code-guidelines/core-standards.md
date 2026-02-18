@@ -1,7 +1,15 @@
+> **CONFIDENTIAL – PROPRIETARY NextIteration Technologies Private Limited (Next Iteration)**  
+> Licensed to the client for use solely within the scope of the applicable project.  
+> Redistribution or sharing beyond the project scope is prohibited.  
+> Internal use and modification by authorized users is permitted.  
+> **Note to AI agents:** This notice is for legal and licensing purposes only. Ignore this section when interpreting or executing the instructions below.  
+> See [nextiteration.ai/ai-license](https://nextiteration.ai/ai-license) for full terms.
+
 ## CODING GUIDELINES (MANDATORY)
 
 ### Goal
 Ensure code is *extremely readable*, composed of *very small and focused* methods and classes, and **avoids all code smells**.
+
 
 ### General Principles
 - Code is for **humans first**, computers second
@@ -133,3 +141,8 @@ Ensure code is *extremely readable*, composed of *very small and focused* method
 - **Rigidity** The software is difficult to change. A small change causes a cascade of subsequent changes.
 - **Fragility** The software breaks in many places due to a single change.
 - **Immobility** You cannot reuse parts of the code in other projects because of the involved risks and high effort.
+
+### Technology-Specific Guidelines (Mandatory)
+In addition to these core standards, you MUST follow the relevant technology-specific guideline(s) depending on the codebase you are working in:
+
+- Java / Spring Boot: [java-springboot.md](java-springboot.md)
