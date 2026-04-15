@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental", "src\MovieRental\MovieRental.csproj", "{95B84F03-9AE8-4BF0-B0DA-646B6945EBE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.Tests", "tests\MovieRental.Tests\MovieRental.Tests.csproj", "{2943E07A-B689-4C8C-B30E-CD71839DA32D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95B84F03-9AE8-4BF0-B0DA-646B6945EBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B84F03-9AE8-4BF0-B0DA-646B6945EBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B84F03-9AE8-4BF0-B0DA-646B6945EBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B84F03-9AE8-4BF0-B0DA-646B6945EBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2943E07A-B689-4C8C-B30E-CD71839DA32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2943E07A-B689-4C8C-B30E-CD71839DA32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2943E07A-B689-4C8C-B30E-CD71839DA32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2943E07A-B689-4C8C-B30E-CD71839DA32D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
