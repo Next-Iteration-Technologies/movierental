@@ -28,4 +28,3 @@ Unit tests can be run using maven[1]:
 [1]: http://maven.apache.org/
 
 Tests are located in the test directory and run using Junit.
-
