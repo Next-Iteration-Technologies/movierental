@@ -68,3 +68,7 @@ replay_pid*
 # ─── JUnit ────
 *.junit
 *.junit.xml
+
+# ─── .NET / C# ────
+bin/
+obj/
