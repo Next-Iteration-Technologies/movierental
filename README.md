@@ -2,8 +2,6 @@
 
 This is the Python port of Martin Fowler's classic Movie Rental refactoring kata from *Refactoring: Improving the Design of Existing Code*.
 
-> When you find you have to add a feature to a program, and the program's code is not structured in a convenient way to add the feature, first refactor the program to make it easy to add the feature, then add the feature.
-
 ## Problem Statement
 
 Read [MovieRentalRequirements.md](MovieRentalRequirements.md) thoroughly before attempting the exercise.
@@ -37,9 +35,19 @@ movierental/
 
 ## Setup
 
+**macOS / Linux**
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -e ".[test]"
+```
+
+**Windows**
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate
 pip install -e ".[test]"
 ```
 

@@ -28,9 +28,19 @@ We want to write an HTML version of the statement method:
 
 All you need is [Python](https://www.python.org/downloads/) 3.10 or later.
 
+**macOS / Linux**
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -e ".[test]"
+```
+
+**Windows**
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate
 pip install -e ".[test]"
 ```
 
