@@ -20,14 +20,10 @@ We want to write an HTML version of the statement method :
 ```
 
 
-## Build
-All you need to build this project is Java 11 or later, Maven 3.0 or later.
+## Setup
+All you need is access to an SAP ABAP system. Upload the `.abap` files using ABAP Development Tools (ADT) in Eclipse or SAP GUI.
 
 ## Testing
-Unit tests can be run using maven:
+Tests are implemented using the ABAP Unit framework. Run them from ADT by right-clicking the test class and selecting **Run As → ABAP Unit Test**.
 
-    $ mvn test
-
-[1]: http://maven.apache.org/
-
-Tests are located in the test directory and run using Junit.
+Tests are located in `zcl_mr_customer_test.abap`.
