@@ -20,14 +20,14 @@ We want to write an HTML version of the statement method :
 ```
 
 
-## Build
-All you need to build this project is Java 11 or later, Maven 3.0 or later.
+## Setup
+All you need is Node.js and npm.
+
+    $ npm install
 
 ## Testing
-Unit tests can be run using maven:
+Unit tests can be run using npm:
 
-    $ mvn test
+    $ npm test
 
-[1]: http://maven.apache.org/
-
-Tests are located in the test directory and run using Junit.
+Tests are located in `src/CustomerTest.ts` and run using Vitest.

@@ -10,21 +10,21 @@ Whenever you do refactoring, the first step is always the same.
 You need to build a solid set of tests for that section of code. The tests are essential because even though you follow refactorings structured to avoid most of the opportunities for introducing bugs, you are still human and still make mistakes. Thus, you need solid tests that act as safety net when we refactor the code.
 
 ## Problem Statement
-- This codebase includes a refactoring exercise under `movierental` package.
+- This codebase includes a refactoring exercise under the `src` directory.
 - Read the problem statement here: [MovieRentalRequirements.md](MovieRentalRequirements.md) thoroughly before attempting the exercise.
 
 This refactoring exercise, when performed systematically provides insight into understanding different code smells, the technique to refactor and the design principles to consider while refactoring. This is an exercise to demonstrate how clean code can be evolved from legacy codebase. 
 
-## Build
+## Setup
 
-All you need to build this project is Java 11 or later, Maven 3.0 or later.
+All you need is Node.js and npm.
+
+    $ npm install
 
 ## Testing
 
-Unit tests can be run using maven[1]:
+Unit tests can be run using npm:
 
-    $ mvn test
+    $ npm test
 
-[1]: http://maven.apache.org/
-
-Tests are located in the test directory and run using Junit.
+Tests are located in `src/CustomerTest.ts` and run using Vitest.
