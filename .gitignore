@@ -72,3 +72,6 @@ replay_pid*
 # ─── .NET / C# ────
 bin/
 obj/
+
+# ─── JavaScript / Node ────
+node_modules/
