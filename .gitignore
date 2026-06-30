@@ -72,3 +72,13 @@ replay_pid*
 # ─── .NET / C# ────
 bin/
 obj/
+
+# ─── Python ────
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+dist/
+*.egg

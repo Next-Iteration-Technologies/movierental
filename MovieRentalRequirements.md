@@ -1,15 +1,20 @@
 # Movie Rental Requirements
 
-In this MovieRental codebase, the `statement` method prints out a simple text output of a rental statement
+In this MovieRental codebase, the `statement` method on `Customer` prints out a simple text rental statement:
+
 ```
 Rental Record for martin
-  Ran 3.5
-  Trois Couleurs: Bleu 2.0
+	Ran	3.5
+	Trois Couleurs: Bleu	2.0
 Amount owed is 5.5
 You earned 2 frequent renter points
 ```
-We want to write an HTML version of the statement method :
-```
+
+## Goal
+
+We want to write an HTML version of the statement method:
+
+```html
 <h1>Rental Record for <em>martin</em></h1>
 <table>
   <tr><td>Ran</td><td>3.5</td></tr>
@@ -19,15 +24,22 @@ We want to write an HTML version of the statement method :
 <p>You earned <em>2</em> frequent renter points</p>
 ```
 
-
 ## Build
-All you need to build this project is Java 11 or later, Maven 3.0 or later.
+
+All you need is [Python](https://www.python.org/downloads/) 3.10 or later.
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[test]"
+```
 
 ## Testing
-Unit tests can be run using maven:
 
-    $ mvn test
+Unit tests can be run using pytest:
 
-[1]: http://maven.apache.org/
+```bash
+pytest
+```
 
-Tests are located in the test directory and run using Junit.
+Tests are located in `tests/` and use [pytest](https://docs.pytest.org/).
